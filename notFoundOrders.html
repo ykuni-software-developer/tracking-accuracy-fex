@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p> Hello Supply team, </p> </br>
+    <p> I just noticed that there are reference numbers who are shipped in FEX in their daily report but when I compared it against the list of shipped order numbers in Skubana on that day based on their tracking numbers it was not found. </p>
+    <p> I also tried searching orders that are PENDING_FULFILLMENT in Skubana with similar order numbers to automatically update it but I can't find it.</p>
+    </br>
+    <p> These are the order numbers in FEX for your review: </p> </br>
+    <ul>
+      <? for (var i = 0; i < data.length; i++) { ?>
+        <li><?= data[i]["orderNumber"] ?> - <?= data[i]["trackingNumber"] ?></li>
+      <? } ?>
+    </ul>
+    Thank you.
+  </body>
+</html>
